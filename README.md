@@ -31,13 +31,13 @@ Archives are named in the following format:
 
     {feed}-{year}-{month}-{day}-{hour}.tar.bz2
 
-    e.g. feed26-2018-04-28-00.tar.bz2
+    e.g. feed26-2020-01-01-12.tar.bz2
 
 To access via API, use following URL structure:
 
     https://2m9ldwhcmh.execute-api.us-east-2.amazonaws.com/gtfs_rt/historic.mta/{feed}/{year}/{month}/{day}/{archive}
 
-    e.g. https://2m9ldwhcmh.execute-api.us-east-2.amazonaws.com/gtfs_rt/historic.mta/feed26/2018/04/28/feed26-2018-04-28-00.tar.bz2
+    e.g. https://2m9ldwhcmh.execute-api.us-east-2.amazonaws.com/gtfs_rt/historic.mta/feed26/2020/01/01/feed26-2020-01-01-12.tar.bz2
 
 
 Archive Start: 16:00:00 EST, 27 April 2018
