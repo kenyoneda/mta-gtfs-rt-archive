@@ -1,6 +1,6 @@
 #!/home/ubuntu/miniconda3/envs/historic-mta/bin/python
-'''Script to archive (.tar.bz2) and upload
-all files generated before current hour to S3 bucket'''
+"""Script to archive (.tar.bz2) and upload
+all files generated before current hour to S3 bucket"""
 import boto3
 import datetime
 import os
@@ -19,9 +19,9 @@ BUCKET_NAME = 'historic.mta'
 
 
 def get_date_hour():
-    '''Get date and current hour. Use to determine
-    which folders are still being downloaded to'''
-    d = datetime.datetime.utcnow()
+    """Get date and current hour. Use to determine
+    which folders are still being downloaded to"""
+    d = datetime.datetime.now(datetime.UTC)
     year = str(d.year)
     month = str(d.month).zfill(2)
     day = str(d.day).zfill(2)
@@ -30,8 +30,8 @@ def get_date_hour():
 
 
 def upload_dirs():
-    '''Tar and upload all files in directory of form:
-    /year/month/date/hour/'''
+    """Tar and upload all files in directory of form:
+    /year/month/date/hour/"""
     # Exclude all directories that represent current hour
     date_hour = get_date_hour()
     date_hour_path = '/'.join(list(date_hour))

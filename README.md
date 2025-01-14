@@ -50,5 +50,5 @@ Throttling: Limited to 10 requests per second
 TMUX session is running data fetcher script (gtfs_rt_fetcher.sh)
 
 CRONTAB contains 2 scheduled jobs:
-1. Clean up everyday at 02:00AM (clean_empty_dirs.sh)
+1. Clean up every day at 02:00AM (clean_empty_dirs.sh)
 2. Upload to S3 every hour on the first minute (gtfs_rt_uploader.py)
