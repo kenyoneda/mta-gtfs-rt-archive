@@ -32,7 +32,7 @@ def get_gtfs_rt_data():
     for feed, url_suffix in FEED_IDS.items():
         # Generate path to write files
         the_feed = "feed" + feed
-        d = datetime.datetime.utcnow()
+        d = datetime.datetime.now(datetime.UTC)
         year = str(d.year)
         month = str(d.month).zfill(2)
         day = str(d.day).zfill(2)
